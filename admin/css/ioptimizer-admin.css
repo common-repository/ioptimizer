@@ -1,0 +1,470 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.ioptimize-main-container {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+h1 {
+    padding-bottom: 50px !important;
+    font-size: 40px !important;
+}
+
+a,
+input.button-primary,
+input.button,
+button,
+input {
+    box-shadow: none !important;
+    outline: none !important;
+    text-shadow: none !important;
+}
+
+.ioptimizer-logo {
+    max-width: 250px;
+    width: 100%;
+    margin: 25px 0px;
+}
+
+.nav-tabs {
+    float: left;
+    width: 100%;
+    margin: 0;
+    list-style-type: none;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-tabs > li {
+    float: left;
+    margin-bottom: -1px;
+}
+
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.5;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 0 0;
+    float: left;
+    text-decoration: none;
+}
+
+.nav-tabs > li > a:hover {
+    border-color: #eee #eee #ddd;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border-color: transparent;
+}
+
+.tab-content > .tab-pane {
+    float: left;
+    width: 100%;
+    display: none;
+}
+
+.tab-content > .tab-pane.active {
+    display: block;
+    background-color: #fff;
+    box-shadow: 0 5px 4px -2px rgba(0, 0, 0, 0.15);
+    max-width: 90%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    min-height: 350px;
+
+}
+
+.ioptimize-main-panel table tr {
+    padding-bottom: 15px;
+    display: block;
+}
+
+.ioptimize-main-panel table th {
+    text-align: left;
+    padding-right: 15px;
+    width: 190px;
+}
+
+.ioptimize-config-area,
+.ioptimize-promotion-area {
+    display: inline-block;
+}
+
+.ioptimize-config-area {
+    width: 79%;
+}
+
+.ioptimize-promotion-area {
+    width: 20%;
+    vertical-align: top;
+    padding: 20px;
+    text-align: center;
+    border-left: solid 1px rgba(0, 0, 0, 0.1);
+    height: 90%;
+    position: absolute;
+    box-sizing: border-box;
+}
+
+.promotion-area-container {
+    position: relative;
+    top: 43%;
+    transform: translateY(-50%);
+}
+
+.promotion-area-container a {
+    color: #500ade;
+}
+
+.ioptimize-config-area form input[type="submit"],
+.promotion-area-container a.buy-tokens-btn {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    width: 100%;
+    max-width: 90%;
+    background-color: #500ade;
+    padding: 7px 12px;
+    border: 1px solid #500ade;
+    outline: none;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-sizing: content-box;
+    padding: 7px 0px;
+}
+
+.ioptimize-config-area form input[type="submit"] {
+    max-width: 250px;
+    box-sizing: content-box;
+    padding: 7px 0px;
+}
+
+.ioptimize-config-area form input[type="submit"]:hover,
+.promotion-area-container a.buy-tokens-btn:hover {
+    border: 1px solid #500ade;
+    background: #fff;
+    color: #500ade;
+}
+
+.ioptimize-column-left,
+.ioptimize-column-right {
+    display: inline-block;
+}
+
+.ioptimize-column-left {
+    width: 79%;
+}
+
+.ioptimize-column-right {
+    width: 18%;
+    overflow: hidden;
+    padding: 0px 20px;
+}
+
+.ioptimize-column-left .tokens-needed p {
+    width: 100%;
+    padding: 7px 15px;
+    background: #5009de;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.ioptimize-column-right .sidebar-container {
+    border-left: solid 1px rgba(0, 0, 0, 0.1);
+    height: 97%;
+    position: absolute;
+    padding: 20px;
+}
+
+.ioptimize-column-right .sidebar-container h2 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.ioptimize-column-right .sidebar-container p {
+    margin-bottom: 25px;
+    display: block;
+}
+
+.ioptimize-column-right .sidebar-container .deselect-all,
+.ioptimize-column-right .sidebar-container .select-all,
+.ioptimize-column-right .sidebar-container .bulk-process {
+    box-shadow: none;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.ioptimize-column-right .sidebar-container .deselect-all,
+.ioptimize-column-right .sidebar-container .select-all {
+    border: 1px solid #500ade;
+    background: #fff;
+    color: #500ade;
+    box-sizing: content-box;
+    padding: 7px 0px;
+}
+
+.ioptimize-column-right .sidebar-container .bulk-process {
+    background: #500ade;
+    color: #fff;
+    border: none;
+    outline: none;
+    border: 1px solid #fff;
+    box-sizing: content-box;
+    padding: 7px 0px;
+}
+
+.ioptimize-column-right .sidebar-container .deselect-all:hover,
+.ioptimize-column-right .sidebar-container .select-all:hover,
+.ioptimize-column-right .sidebar-container .bulk-process:hover {
+    border: 1px solid #fff;
+    outline: none;
+    box-shadow: none;
+    color: #fff;
+    background-image: -moz-linear-gradient(146deg, #0250c5 0%, #ca3c87 60%, #d43f8d 100%);
+    background-image: -webkit-linear-gradient(146deg, #0250c5 0%, #ca3c87 60%, #d43f8d 100%);
+    background-image: -ms-linear-gradient(146deg, #0250c5 0%, #ca3c87 60%, #d43f8d 100%);
+
+}
+
+.tbl-ioptimizer-header-images table,
+.tbl-ioptimizer-images table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.tbl-ioptimizer-images tr td {
+    text-align: center;
+    word-break: break-word;
+}
+
+.tbl-ioptimizer-images tr td:first-child {
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    thead {
+        display: none;
+    }
+
+    .tbl-ioptimizer-images tr td {
+        display: block;
+        text-align: center !important;
+    }
+
+    .ioptimize-column-right .sidebar-container {
+        position: static;
+    }
+
+    #tab-2.active {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        /* optional */
+        -webkit-box-align: start;
+        -moz-box-align: start;
+        -ms-flex-align: start;
+        -webkit-align-items: flex-start;
+        align-items: flex-start;
+    }
+
+    #tab-2 .ioptimize-column-right {
+        -webkit-box-ordinal-group: 1;
+        -moz-box-ordinal-group: 1;
+        -ms-flex-order: 1;
+        -webkit-order: 1;
+        order: 1;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    #tab-2 .ioptimize-column-left {
+        -webkit-box-ordinal-group: 2;
+        -moz-box-ordinal-group: 2;
+        -ms-flex-order: 2;
+        -webkit-order: 2;
+        order: 2;
+        width: 100%;
+    }
+
+    #tab-2 .ioptimize-column-right,
+    #tab-2 .ioptimize-column-left {
+        width: 100%;
+        padding: 20px;
+        border: none;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+
+    #tab-2 {
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 96%;
+    }
+
+    .ioptimize-column-right .sidebar-container {
+        height: 100%;
+        border: none;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+}
+
+.tbl-ioptimizer-header-images .tbl-header,
+.tbl-ioptimizer-images .tbl-header {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.tbl-ioptimizer-header-images .tbl-content,
+.tbl-ioptimizer-images .tbl-content {
+    height: 300px;
+    overflow-x: auto;
+    margin-top: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.tbl-ioptimizer-header-images th,
+.tbl-ioptimizer-images th {
+    padding: 20px 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 12px;
+    color: #000;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+.tbl-ioptimizer-header-images th:first-child,
+.tbl-ioptimizer-images th:first-child {
+    text-align: left;
+}
+
+.tbl-ioptimizer-header-images td,
+.tbl-ioptimizer-images td {
+    padding: 15px;
+    text-align: left;
+    vertical-align: middle;
+    font-weight: 300;
+    font-size: 12px;
+    color: #000;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+.tbl-ioptimizer-images .ioptimizer-image-column img {
+    width: 100%;
+}
+
+.tbl-ioptimizer-images tr td:nth-child(4) {
+    color: #000;
+    font-weight: bold;
+}
+
+.tbl-ioptimizer-images tr td:nth-child(6),
+.tbl-ioptimizer-images tr td:nth-child(5) {
+    color: #500ade;
+    font-weight: bold;
+}
+
+.tbl-ioptimizer-images tr td button {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #fff;
+    width: 100%;
+    max-width: 110px;
+    background-color: #500ade;
+    padding: 7px 12px;
+    border: 1px solid #500ade;
+    outline: none;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+    -o-transition: all 0.3s ease-in;
+    transition: all 0.3s ease-in;
+}
+
+.tbl-ioptimizer-images tr td button:hover {
+    cursor: pointer;
+    background: #fff;
+    color: #500ade;
+}
+
+@media (max-width: 876px) {
+    .ioptimize-config-area,
+    .ioptimize-promotion-area {
+        width: 100%;
+        display: block;
+        padding: 20px;
+        box-sizing: border-box;
+        position: static;
+    }
+
+    .ioptimize-promotion-area,
+    .ioptimize-main-panel table tr:nth-child(5) th,
+    .ioptimize-main-panel table tr:nth-child(4) th {
+        width: 100%;
+        display: block;
+        height: 100%;
+    }
+
+    .ioptimize-config-area {
+        padding: 0px;
+    }
+
+    .ioptimize-promotion-area {
+        border: none !important;
+        padding: 0px;
+    }
+
+    .promotion-area-container {
+        top: 0%;
+        transform: translateY(0);
+    }
+
+    .ioptimize-config-area form input[type="submit"] {
+        margin: 0 auto;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .ioptimize-main-panel table tr:nth-child(4) td,
+    .ioptimize-main-panel table tr:nth-child(4) td input {
+        width: 100%;
+        display: block;
+        max-width: 100%;
+    }
+
+    .promotion-area-container a.buy-tokens-btn {
+        max-width: 100%;
+        text-transform: none !important;
+        box-shadow: none !important;
+    }
+}
